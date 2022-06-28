@@ -1,0 +1,5 @@
+app/logs
+app/redis-mysql/logs
+app/redis-mysql/.idea
+app/redis-mysql/target
+grafana/logs
