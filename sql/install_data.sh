@@ -5,5 +5,6 @@ source $WORK_PATH/$FILE_1;
 source $WORK_PATH/$FILE_2;
 source $WORK_PATH/$FILE_3;
 source $WORK_PATH/$FILE_4;
+source $WORK_PATH/$FILE_5;
 exit
 EOF

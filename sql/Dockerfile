@@ -33,6 +33,7 @@ ENV FILE_1 total_recv.sql
 ENV FILE_2 total_send.sql
 ENV FILE_3 total.sql
 ENV FILE_4 delayloss.sql
+ENV FILE_5 measure2.sql
 
 #定义shell文件名
 ENV INSTALL_DATA_SHELL install_data.sh
@@ -44,6 +45,7 @@ COPY ./$FILE_1 $WORK_PATH/
 COPY ./$FILE_2 $WORK_PATH/
 COPY ./$FILE_3 $WORK_PATH/
 COPY ./$FILE_4 $WORK_PATH/
+COPY ./$FILE_5 $WORK_PATH/
 
 #把要执行的shell文件放到/docker-entrypoint-initdb.d/目录下，容器会自动执行这个shell
 COPY ./$INSTALL_DATA_SHELL $AUTO_RUN_DIR/

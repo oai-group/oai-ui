@@ -30,8 +30,8 @@ CREATE TABLE `delayloss`  (
   `srcPort` smallint(6) UNSIGNED NOT NULL,
   `dstPort` smallint(6) UNSIGNED NOT NULL,
   `protocol` tinyint(4) UNSIGNED NOT NULL,
-  `delay` double(20, 2) NULL DEFAULT NULL,
-  `loss` double(20, 2) NULL DEFAULT NULL,
+  `delay` double(20, 3) NULL DEFAULT NULL,
+  `loss` double(20, 3) NULL DEFAULT NULL,
   `data_time_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 

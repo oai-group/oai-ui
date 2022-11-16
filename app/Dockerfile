@@ -1,4 +1,4 @@
-FROM java:8
+FROM openjdk
 ENV MYPATH /home/zcq/docker-compose
 WORKDIR $MYPATH
 # 将本目录下的jar包和application.yml复制到容器/home/zcq/docker-compose目录下
