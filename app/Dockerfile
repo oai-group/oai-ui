@@ -4,5 +4,6 @@ WORKDIR $MYPATH
 # 将本目录下的jar包和application.yml复制到容器/home/zcq/docker-compose目录下
 ADD *.jar ./docker-compose-app.jar
 ADD *.yml ./application.yml
+ADD wait-for-it.sh ./wait-for-it.sh
 # 容器启动运行jar包
 ENTRYPOINT ["java", "-jar", "./docker-compose-app.jar"]
